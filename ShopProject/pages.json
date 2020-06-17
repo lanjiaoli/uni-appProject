@@ -1,16 +1,91 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/card/card",
+            "style" : {
+				"navigationBarTitleText":"购物车"
+			}
+        }
+        ,{
+            "path" : "pages/member/member",
+            "style" : {
+				"navigationBarTitleText":"会员"
+			}
+        }
+        ,{
+            "path" : "pages/news/news",
+            "style" : {
+				"navigationBarTitleText":"新闻"
+			}
+        },
+		{
+		    "path" : "pages/video/viedo",
+		    "style" : {
+				"navigationBarTitleText":"精美视频"
+			}
+		}
+        ,{
+            "path" : "pages/home/home-recomend/home-recomend",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home-category/home-category",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home-new/home-new",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home-album/home-album",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "111",
+		"navigationBarBackgroundColor": "#b50e03",
 		"backgroundColor": "#F8F8F8"
+	},
+	
+	
+	"tabBar":{
+		"selectedColor":"#b50e03",
+		"color":"#333333",
+		"list":[{
+			"text":"首页",
+			"pagePath": "pages/home/index",
+			"iconPath":"static/icon/home.png",
+			"selectedIconPath":"static/icon/home-active.png"
+		},
+		{
+			"text":"资讯",
+			"pagePath": "pages/news/news",
+			"iconPath":"static/icon/news.png",
+			"selectedIconPath":"static/icon/news-active.png"
+		},{
+			"text":"精美视频",
+			"pagePath": "pages/video/viedo",
+			"iconPath":"static/icon/home.png",
+			"selectedIconPath":"static/icon/home-active.png"
+		},
+		{
+			"text":"购物车",
+			"pagePath": "pages/card/card",
+			"iconPath":"static/icon/cart.png",
+			"selectedIconPath":"static/icon/cart-active.png"
+		},{
+			"text":"个人中心",
+			"pagePath": "pages/member/member",
+			"iconPath":"static/icon/member.png",
+			"selectedIconPath":"static/icon/member-active.png"
+		}
+		]
 	}
 }
