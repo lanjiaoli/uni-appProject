@@ -45,11 +45,18 @@
         ,{
             "path" : "pages/home/home-album/home-album",
             "style" : {}
-        }
+        },
+		{
+		    "path" : "pages/album/index",
+		    "style" : {
+				"navigationBarTitleText":"专辑详情"
+				
+			}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "111",
+		"navigationBarTitleText": "电影资讯",
 		"navigationBarBackgroundColor": "#b50e03",
 		"backgroundColor": "#F8F8F8"
 	},
