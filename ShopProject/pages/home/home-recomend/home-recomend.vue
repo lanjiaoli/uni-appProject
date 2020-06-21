@@ -4,13 +4,13 @@
 			<!-- 推荐开始 -->
 			<view class="recomend_wrap">
 				
-				<view class="recomend_item" 
+				<navigator class="recomend_item" 
 				v-for="item in recomends" 
-				:key="item.id">
+				:key="item.id"
+				:url="`/pages/album/index?id=${item.target}`">
 					<image :src="item.thumb" mode="widthFix">
 					</image>
-					
-				</view>
+				</navigator>
 			</view>
 		</view>
 		<!-- 推荐结束 -->
@@ -43,10 +43,12 @@
 				
 				<view class="hots_content">
 					<view class="hot_item"
-					v-for="item in hots"
+					v-for="(item ,index) in hots"
 					:key = "item.id"
 					>
+					<godetail :list="hots" :index="index">
 					<image :src="item.thumb" mode="aspectFill"></image>
+					</godetail>
 					</view>
 				</view>
 			</view>
@@ -57,6 +59,8 @@
 
 <script>
 	import monent from "../../../components/uni-segmented-control/monent.js"
+	import godetail from "../../../components/goDetail/goDetail.vue"
+	
 	export default {
 		data() {
 			return {
@@ -114,8 +118,11 @@
 		mounted() {
 			// 组件加载完毕
 			this.getlists()
+		},
+		components:{
+			 godetail,
+			
 		}
-		
 		
 	}
 </script>

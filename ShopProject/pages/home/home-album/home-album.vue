@@ -38,9 +38,10 @@
 		<view class="album_list">
 			<navigator 
 			class="album_item"
-			url="/pages/album/index"
 			v-for="item in albums"
-			:key = "item.id">
+			:key = "item.id"
+			:url="`/pages/album/index?id=${item.id}`"
+			>
 	
 		
 			<!-- 左边图片 -->

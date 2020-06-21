@@ -53,6 +53,17 @@
 				
 			}
 		}
+        ,{
+            "path" : "components/goDetail/goDetail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/imgDetail/imgDetail",
+            "style" : {
+				"navigationBarTitleText":"图片详情"
+				
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
