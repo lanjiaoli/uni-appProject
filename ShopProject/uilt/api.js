@@ -23,9 +23,9 @@ export const myRequest = (options)=> {
 				resolve(res.data)
 			},
 			fail : (err) => {
-				uni.showErrorMessage({
-					title:'请求接口失败',
-				})
+				// uni.showErrorMessage({
+				// 	title:'请求接口失败',
+				// })
 				reject(err)
 			},
 			complete() {

@@ -83,6 +83,9 @@
 			
 				if (this.current !== e.currentIndex) {
 					this.current = e.currentIndex;
+					uni.setNavigationBarTitle({
+						title:items[this.current].title
+					})
 				}
 			},
 			
